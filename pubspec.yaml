@@ -1,0 +1,50 @@
+name: crazy_scanner_app
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+  simple_barcode_scanner:
+  clipboard:
+  fluttertoast:
+  url_launcher:
+  google_fonts:
+# RUN THIS COMMAND TO CHANGE ----> APP & PACKAGE NAME
+# flutter pub global activate rename
+# rename setAppName --targets ios,android,web,windows --value "Crazy Scanner"
+# rename setBundleId --targets ios,android,web,windows --value "com.basilcreations.crazy_scanner"
+  rename:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons:
+
+# flutter pub run flutter_launcher_icons:main
+flutter_icons:
+  android: "app_icon"
+  ios: true
+  web:
+    generate: true
+  remove_alpha_ios: true
+  image_path: "assets/app_icon.png"
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  flutter_lints: ^3.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/
